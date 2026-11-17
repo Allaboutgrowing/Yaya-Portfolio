@@ -486,3 +486,67 @@ nav a:hover {
         transition-duration: 0.01ms !important;
     }
 }
+/* PROFESSIONAL PROJECT VISUALS */
+
+.project-visual {
+    min-height: 180px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--deep-blue), var(--blue));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-visual span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.project-visual h3 {
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.project-visual p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.hub-visual {
+    background: linear-gradient(135deg, #064663, #087EA4);
+}
+
+.farmbook-visual {
+    background: linear-gradient(135deg, #087EA4, #48B8D8);
+}
+
+.nexora-visual {
+    background: linear-gradient(135deg, #064663, #159CC5);
+}
+
+.project-visual::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    right: -65px;
+    bottom: -100px;
+}
+
+.project-visual > * {
+    position: relative;
+    z-index: 1;
+}
