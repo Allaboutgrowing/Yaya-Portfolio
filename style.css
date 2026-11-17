@@ -1,18 +1,12 @@
-/* =================================
-   YAYA MOHAMMED PORTFOLIO
-   BLACK • OCEAN BLUE • GOLD • WHITE
-================================= */
-
 :root {
-    --background: #070b12;
-    --surface: #101a28;
-    --surface-light: #17263a;
-    --ocean: #168aad;
+    --background: #061a2b;
+    --surface: #0b2942;
+    --surface-light: #123b5b;
+    --ocean: #087eae;
     --ocean-light: #38bdf8;
-    --gold: #e6bd55;
     --white: #ffffff;
-    --muted: #b8c5d3;
-    --border: rgba(56, 189, 248, 0.18);
+    --muted: #d1e3ef;
+    --border: rgba(255, 255, 255, 0.13);
 }
 
 * {
@@ -46,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(7, 11, 18, 0.95);
+    background: rgba(6, 26, 43, 0.96);
     border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
@@ -81,8 +75,6 @@ nav ul li a:hover {
     color: var(--ocean-light);
 }
 
-/* MOBILE MENU BUTTON */
-
 .menu-toggle {
     display: none;
     background: none;
@@ -92,7 +84,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero {
     min-height: 90vh;
@@ -104,14 +96,14 @@ nav ul li a:hover {
     background:
         radial-gradient(
             circle at 80% 30%,
-            rgba(22, 138, 173, 0.25),
-            transparent 35%
+            rgba(8, 126, 174, 0.35),
+            transparent 38%
         ),
-        linear-gradient(135deg, #070b12, #101a28);
+        linear-gradient(135deg, #061a2b, #0b2942);
 }
 
 .hero h4 {
-    color: var(--gold);
+    color: var(--ocean-light);
     letter-spacing: 4px;
     font-size: 13px;
     margin-bottom: 20px;
@@ -149,13 +141,13 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: var(--gold);
-    color: #070b12;
-    border-color: var(--gold);
+    background: var(--white);
+    color: var(--background);
+    border-color: var(--white);
     transform: translateY(-3px);
 }
 
-/* GENERAL SECTIONS */
+/* SECTIONS */
 
 section {
     padding: 85px 8%;
@@ -179,8 +171,6 @@ section p {
     color: var(--muted);
 }
 
-/* SECTION DECORATION */
-
 .section-title {
     margin-bottom: 40px;
 }
@@ -190,7 +180,7 @@ section p {
     display: block;
     width: 65px;
     height: 3px;
-    background: var(--gold);
+    background: var(--ocean-light);
     margin-top: 12px;
 }
 
@@ -206,7 +196,8 @@ section p {
     margin-top: 35px;
 }
 
-.card {
+.card,
+.project-card {
     background: var(--surface);
     padding: 28px;
     border: 1px solid var(--border);
@@ -214,53 +205,34 @@ section p {
     transition: 0.3s;
 }
 
-.card:hover {
+.card:hover,
+.project-card:hover {
     transform: translateY(-7px);
     border-color: var(--ocean-light);
     background: var(--surface-light);
 }
 
-.card h3 {
-    color: var(--gold);
+.card h3,
+.project-card h3 {
+    color: var(--ocean-light);
     margin-bottom: 12px;
     font-size: 20px;
 }
 
-.card p {
+.card p,
+.project-card p {
     color: var(--muted);
     font-size: 15px;
 }
 
-/* PROJECTS */
-
-.project-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 30px;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-6px);
-}
-
-.project-card h3 {
-    color: var(--ocean-light);
-    margin-bottom: 12px;
-}
-
-.project-card p {
-    color: var(--muted);
-}
+/* PROJECT STATUS */
 
 .project-card .status {
     display: inline-block;
     margin-top: 15px;
     padding: 5px 12px;
-    background: rgba(230, 189, 85, 0.12);
-    color: var(--gold);
+    background: rgba(56, 189, 248, 0.13);
+    color: var(--ocean-light);
     border-radius: 20px;
     font-size: 12px;
 }
@@ -279,18 +251,17 @@ section a:not(.btn) {
 }
 
 section a:not(.btn):hover {
-    color: var(--gold);
+    color: var(--white);
 }
 
 /* CONTACT */
 
 #contact {
-    background:
-        linear-gradient(
-            135deg,
-            #101a28,
-            #070b12
-        );
+    background: linear-gradient(
+        135deg,
+        #0b2942,
+        #061a2b
+    );
 }
 
 #contact p {
@@ -302,17 +273,17 @@ section a:not(.btn):hover {
 footer {
     padding: 25px 8%;
     text-align: center;
-    background: #05080e;
+    background: #041321;
     border-top: 1px solid var(--border);
     color: var(--muted);
     font-size: 14px;
 }
 
 footer span {
-    color: var(--gold);
+    color: var(--ocean-light);
 }
 
-/* RESPONSIVE DESIGN */
+/* MOBILE RESPONSIVENESS */
 
 @media (max-width: 768px) {
 
