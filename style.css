@@ -550,3 +550,57 @@ nav a:hover {
     position: relative;
     z-index: 1;
 }
+/* ENHANCED CONTACT SECTION */
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    background: var(--white);
+    padding: 40px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(8, 126, 164, 0.12);
+    border: 1px solid var(--border);
+}
+
+.contact-content h3 {
+    color: var(--deep-blue);
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.contact-content p {
+    color: var(--deep-blue);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contact-content .btn {
+    display: inline-block;
+    margin: 8px;
+}
+
+.contact-email {
+    font-weight: 700;
+    margin-top: 25px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .contact-content {
+        padding: 30px 18px;
+    }
+
+    .contact-content h3 {
+        font-size: 22px;
+    }
+
+    .contact-content .btn {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+}
