@@ -604,3 +604,36 @@ nav a:hover {
         margin: 12px 0;
     }
 }
+/* PROFESSIONAL SOCIAL LINKS */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 24px;
+    color: var(--white);
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--blue);
+    background: var(--white);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
