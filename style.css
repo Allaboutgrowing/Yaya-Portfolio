@@ -753,3 +753,55 @@ color: #0a0a0a;
 }
 
 }
+/* ===== ABOUT SECTION ===== */
+
+.about {
+padding: 100px 8%;
+background: #111111;
+color: #ffffff;
+}
+
+.about-container {
+max-width: 1200px;
+margin: auto;
+}
+
+.section-tag {
+color: #ffcc00;
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+
+.about-heading h2 {
+font-size: clamp(32px, 5vw, 55px);
+line-height: 1.2;
+margin-bottom: 40px;
+}
+
+.about-heading h2 span {
+color: #ffcc00;
+}
+
+.about-content {
+max-width: 850px;
+}
+
+.about-content p {
+color: #c5c5c5;
+font-size: 16px;
+line-height: 1.9;
+margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+
+.about {
+    padding: 75px 6%;
+}
+.about-content p {
+    font-size: 15px;
+}
+
+}
