@@ -1909,3 +1909,133 @@ animation: none;
         white-space: normal;
     }
 }
+/* =========================================
+   28. CAREER VISION REFINEMENT
+========================================= */
+
+.vision-intro {
+    padding: 32px;
+    margin-bottom: 30px;
+    background: linear-gradient(
+        120deg,
+        var(--light-blue),
+        var(--white)
+    );
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.vision-intro-label {
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.vision-intro h3 {
+    color: var(--navy);
+    font-size: 1.55rem;
+    margin: 13px 0;
+}
+
+.vision-intro p {
+    color: var(--muted);
+    line-height: 1.9;
+    max-width: 750px;
+    margin: 0;
+}
+
+.vision-card {
+    position: relative;
+    overflow: hidden;
+    padding: 28px;
+    border: 1px solid var(--border);
+    background: var(--white);
+}
+
+.vision-card > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.vision-card-label {
+    color: var(--primary);
+    font-size: 0.66rem;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    margin: 18px 0 10px;
+}
+
+.vision-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.vision-card p {
+    line-height: 1.85;
+}
+
+.vision-statement {
+    position: relative;
+    overflow: hidden;
+    padding: 45px 35px;
+    margin-top: 35px;
+    background: linear-gradient(
+        125deg,
+        var(--navy),
+        var(--primary-dark)
+    );
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.vision-statement > span {
+    color: #b9d7ff;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.vision-statement blockquote {
+    max-width: 800px;
+    margin: 22px auto;
+    color: var(--white);
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.vision-signature {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 28px;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.vision-signature span {
+    color: #b9d7ff;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+@media (max-width: 600px) {
+    .vision-intro {
+        padding: 23px;
+    }
+
+    .vision-statement {
+        padding: 35px 22px;
+    }
+}
