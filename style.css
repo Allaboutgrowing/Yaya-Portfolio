@@ -1620,3 +1620,78 @@ animation: none;
         font-size: 1.5rem;
     }
 }
+/* =========================================
+   25. ENHANCED TECHNICAL SKILLS
+========================================= */
+
+.skill-category {
+    display: inline-block;
+    margin: 8px 0 12px;
+    color: var(--primary);
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.skill-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    line-height: 1.8;
+}
+
+.skill-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.skill-card .tags span {
+    display: inline-block;
+    padding: 7px 11px;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.skill-card:hover {
+    border-color: rgba(18, 97, 201, 0.35);
+}
+
+.skills-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 750px;
+    margin: 35px auto 0;
+    padding: 18px 22px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.skills-note p {
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .skills-note {
+        align-items: flex-start;
+        padding: 16px;
+    }
+}
