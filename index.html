@@ -3,620 +3,689 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Yaya Mohammed — Technology Developer and Digital Systems Builder. Explore projects, experience, skills and technology initiatives.">
+    <meta name="theme-color" content="#ffffff">
     <title>Yaya Mohammed | Technology Developer</title>
-
-    <meta name="description" content="Yaya Mohammed - Technology Developer focused on software development, digital systems and practical technology solutions.">
-
-    <meta name="theme-color" content="#123b70">
-
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-<!-- NAVIGATION -->
 <header class="header">
-    <nav class="navbar">
-
+    <div class="container nav-container">
         <a href="#home" class="logo">YAYA<span>.</span></a>
-
-        <button class="menu-toggle" id="menu-toggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#yaxo-systems">Yaxo-Systems</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <button class="menu-toggle" id="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="navbar" aria-label="Main navigation">
+        <ul id="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#learning" class="nav-link">Learning</a></li>
+            <li><a href="#vision" class="nav-link">Vision</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#yaxo-systems" class="nav-link">Yaxo-Systems</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-
     </nav>
+</div>
 </header>
-
-
 <main>
-
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-        <p class="eyebrow">TECHNOLOGY • DEVELOPMENT • INNOVATION</p>
-
-        <h1>Yaya Mohammed</h1>
-
-        <h2>
-            Technology Developer &
-            <span>Digital Systems Builder</span>
-        </h2>
-
+<!-- HOME -->
+<section class="hero section" id="home">
+    <div class="container hero-content reveal">
+        <span class="eyebrow">TECHNOLOGY • DEVELOPMENT • INNOVATION</span>
+        <h1>
+            Yaya Mohammed
+            <span>Technology Developer &amp; Digital Systems Builder</span>
+        </h1>
         <p class="hero-description">
             I develop digital solutions, explore emerging technologies
             and build practical systems designed to address real-world
             challenges. My focus is on software development, digital
             infrastructure and creating technology-driven opportunities.
         </p>
-
         <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">
-                Explore My Work
-            </a>
-
-            <a href="#contact" class="btn btn-outline">
-                Connect With Me
-            </a>
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="#contact" class="btn btn-outline">Connect With Me</a>
         </div>
-
+        <div class="hero-note">
+            <span class="status-dot"></span>
+            Focused on continuous learning and practical development.
+        </div>
     </div>
-
-</section>
-
-
-<!-- ABOUT SECTION -->
-<section class="section about" id="about">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <span>ABOUT ME</span>
-            <h2>Driven by Technology.<br>
-                Focused on Building Solutions.</h2>
-        </div>
-
-        <div class="about-content">
-
-            <p>
-                I am Yaya Mohammed, a technology developer focused on
-                digital solutions, software development and building
-                practical systems that address real-world challenges.
-            </p>
-
-            <p>
-                My journey in technology is driven by curiosity,
-                continuous learning and a desire to turn ideas into
-                functional digital solutions. I work across web
-                development, system design and software projects while
-                continually expanding my technical capabilities.
-            </p>
-
-            <p>
-                Beyond development, I am interested in the role
-                technology plays in business operations, innovation,
-                digital infrastructure and creating new opportunities.
-                My long-term goal is to contribute to meaningful
-                technology projects while building solutions that
-                can grow and make an impact.
-            </p>
-
-        </div>
-
+    <div class="hero-decoration" aria-hidden="true">
+        <div class="decoration-circle circle-one"></div>
+        <div class="decoration-circle circle-two"></div>
     </div>
-
 </section>
-
-
-<!-- SKILLS SECTION -->
-<section class="section light-section" id="skills">
-
+<!-- ABOUT -->
+<section class="section about-section" id="about">
     <div class="container">
-
-        <div class="section-heading">
-            <span>MY CAPABILITIES</span>
-            <h2>Technologies & Skills</h2>
-            <p>Areas of technical interest and practical development.</p>
+        <div class="section-heading reveal">
+            <span class="eyebrow">GET TO KNOW ME</span>
+            <h2>About Me</h2>
+            <p>
+                My journey into technology is driven by curiosity,
+                practical problem-solving and a desire to build useful
+                digital solutions.
+            </p>
         </div>
-
-        <div class="card-grid">
-
-            <article class="info-card">
-                <span class="card-number">01</span>
-                <h3>Web Development</h3>
-                <p>Building responsive websites and interactive web interfaces.</p>
-                <div class="tags">HTML · CSS · JavaScript</div>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">02</span>
-                <h3>Software Development</h3>
-                <p>Application logic, prototyping and software development.</p>
-                <div class="tags">Logic · Prototyping · Development</div>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">03</span>
-                <h3>Systems Development</h3>
-                <p>Designing digital workflows and practical system solutions.</p>
-                <div class="tags">System Design · Workflows</div>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">04</span>
-                <h3>Cybersecurity</h3>
-                <p>Developing knowledge of security principles and digital protection.</p>
-                <div class="tags">Security Fundamentals · Awareness</div>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">05</span>
-                <h3>Technology Infrastructure</h3>
-                <p>Exploring hosting, deployment and digital infrastructure.</p>
-                <div class="tags">Hosting · Deployment</div>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">06</span>
-                <h3>Technical Project Development</h3>
-                <p>Turning ideas into structured projects and working prototypes.</p>
-                <div class="tags">Planning · Problem Solving</div>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PROJECTS SECTION -->
-<section class="section" id="projects">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <span>PORTFOLIO</span>
-            <h2>Projects & Development</h2>
-            <p>Selected projects, concepts and practical development work.</p>
-        </div>
-
-        <div class="card-grid">
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="status completed">PROTOTYPE COMPLETED</span>
-                    <span class="project-number">01</span>
+        <div class="about-grid">
+            <div class="about-text panel reveal">
+                <h3>Building Through Technology</h3>
+                <p>
+                    I am a technology developer with an interest in
+                    software development, digital systems, cybersecurity
+                    and technology-driven business solutions.
+                </p>
+                <p>
+                    I enjoy turning ideas into practical projects,
+                    exploring how systems work and developing solutions
+                    that can improve how individuals and organisations
+                    operate.
+                </p>
+                <p>
+                    My development journey combines independent learning,
+                    practical experimentation and involvement in
+                    technology projects. I believe consistent learning
+                    and real-world experience are essential to becoming
+                    a stronger developer.
+                </p>
+            </div>
+            <div class="about-highlights reveal">
+                <div class="highlight-card">
+                    <span class="highlight-number">01</span>
+                    <h3>Problem Solving</h3>
+                    <p>Exploring practical approaches to real-world challenges.</p>
                 </div>
-
+                <div class="highlight-card">
+                    <span class="highlight-number">02</span>
+                    <h3>Innovation</h3>
+                    <p>Developing ideas into useful digital solutions.</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-number">03</span>
+                    <h3>Continuous Growth</h3>
+                    <p>Improving technical knowledge through learning and practice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="eyebrow">TECHNICAL CAPABILITIES</span>
+            <h2>Technical Skills</h2>
+            <p>
+                Areas of technical practice, development and ongoing
+                professional growth.
+            </p>
+        </div>
+        <div class="card-grid skills-grid">
+            <article class="skill-card reveal">
+                <div class="card-icon">01</div>
+                <h3>Web Development</h3>
+                <p>Building responsive and functional web interfaces.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </article>
+            <article class="skill-card reveal">
+                <div class="card-icon">02</div>
+                <h3>Software Development</h3>
+                <p>Application logic, prototyping and software development practice.</p>
+                <div class="tags">
+                    <span>Application Logic</span>
+                    <span>Prototyping</span>
+                    <span>Development</span>
+                </div>
+            </article>
+            <article class="skill-card reveal">
+                <div class="card-icon">03</div>
+                <h3>Systems Development</h3>
+                <p>Planning digital systems and practical operational workflows.</p>
+                <div class="tags">
+                    <span>System Design</span>
+                    <span>Workflow Logic</span>
+                    <span>Digital Solutions</span>
+                </div>
+            </article>
+            <article class="skill-card reveal">
+                <div class="card-icon">04</div>
+                <h3>Cybersecurity</h3>
+                <p>Developing foundational knowledge of digital security.</p>
+                <div class="tags">
+                    <span>Security Fundamentals</span>
+                    <span>Security Awareness</span>
+                    <span>Learning</span>
+                </div>
+            </article>
+            <article class="skill-card reveal">
+                <div class="card-icon">05</div>
+                <h3>Technology Infrastructure</h3>
+                <p>Exploring deployment, hosting and technology infrastructure.</p>
+                <div class="tags">
+                    <span>Deployment</span>
+                    <span>Hosting</span>
+                    <span>Infrastructure</span>
+                </div>
+            </article>
+            <article class="skill-card reveal">
+                <div class="card-icon">06</div>
+                <h3>Technical Project Development</h3>
+                <p>Organising development activities and translating ideas into projects.</p>
+                <div class="tags">
+                    <span>Project Planning</span>
+                    <span>Problem Solving</span>
+                    <span>Innovation</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- PROJECTS -->
+<section class="section projects-section" id="projects">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="eyebrow">SELECTED WORK</span>
+            <h2>Projects &amp; Development</h2>
+            <p>
+                A selection of digital projects, prototypes and
+                technology initiatives.
+            </p>
+        </div>
+        <div class="card-grid">
+            <article class="project-card reveal">
+                <div class="project-top">
+                    <span class="project-number">PROJECT 01</span>
+                    <span class="project-status completed">Prototype Completed</span>
+                </div>
                 <h3>FarmBook</h3>
-
                 <p>
                     A digital farming application prototype designed
-                    to explore practical tools for agricultural
-                    information and farm management.
+                    to explore how technology can support agricultural
+                    activities and information management.
                 </p>
-
                 <div class="tags">
-                    Application Development · JavaScript · Prototype
+                    <span>Application Development</span>
+                    <span>Agriculture</span>
+                    <span>Prototype</span>
                 </div>
             </article>
-
-
-            <article class="project-card">
+            <article class="project-card reveal">
                 <div class="project-top">
-                    <span class="status active">ACTIVE</span>
-                    <span class="project-number">02</span>
+                    <span class="project-number">PROJECT 02</span>
+                    <span class="project-status ongoing">Ongoing</span>
                 </div>
-
-                <h3>Yaxo-Systems Portfolio</h3>
-
+                <h3>Yaxo-Systems Platform</h3>
                 <p>
-                    A digital company platform presenting technology
-                    services, projects and the broader vision of
-                    Yaxo-Systems.
+                    The digital company platform for presenting
+                    technology services, products, development work
+                    and business opportunities.
                 </p>
-
                 <div class="tags">
-                    Web Development · HTML · CSS · JavaScript
+                    <span>Web Development</span>
+                    <span>Digital Platform</span>
+                    <span>Business Technology</span>
                 </div>
             </article>
-
-
-            <article class="project-card">
+            <article class="project-card reveal">
                 <div class="project-top">
-                    <span class="status active">PLANNING & DEVELOPMENT</span>
-                    <span class="project-number">03</span>
+                    <span class="project-number">PROJECT 03</span>
+                    <span class="project-status planning">Planning &amp; Development</span>
                 </div>
-
                 <h3>Hub 01 Digital Systems</h3>
-
                 <p>
-                    An integrated agribusiness technology initiative
-                    exploring procurement, inventory, traceability,
-                    reporting and operational management.
+                    Participation in technology planning and research
+                    for an integrated agribusiness operating system,
+                    including market and supplier intelligence.
                 </p>
-
                 <div class="tags">
-                    Systems Planning · Agritech · Digital Operations
+                    <span>Enterprise Systems</span>
+                    <span>Research</span>
+                    <span>System Planning</span>
                 </div>
             </article>
-
-
-            <article class="project-card">
+            <article class="project-card reveal">
                 <div class="project-top">
-                    <span class="status planning">EXPLORATION</span>
-                    <span class="project-number">04</span>
+                    <span class="project-number">PROJECT 04</span>
+                    <span class="project-status completed">Development Work</span>
                 </div>
-
-                <h3>Digital Solutions Development</h3>
-
+                <h3>Frutelli Ghana Dashboard</h3>
                 <p>
-                    Exploring new software concepts, digital tools
-                    and practical technology solutions for
-                    business and everyday challenges.
+                    Dashboard development work exploring digital
+                    presentation, information organisation and
+                    business-oriented interfaces.
                 </p>
-
                 <div class="tags">
-                    Innovation · Research · Development
+                    <span>Dashboard</span>
+                    <span>Web Interface</span>
+                    <span>Digital Systems</span>
                 </div>
             </article>
-
+            <article class="project-card reveal">
+                <div class="project-top">
+                    <span class="project-number">PROJECT 05</span>
+                    <span class="project-status ongoing">Ongoing Practice</span>
+                </div>
+                <h3>Digital Solutions Development</h3>
+                <p>
+                    Independent exploration and development of
+                    websites, application concepts and practical
+                    digital tools.
+                </p>
+                <div class="tags">
+                    <span>Web Projects</span>
+                    <span>Prototyping</span>
+                    <span>Problem Solving</span>
+                </div>
+            </article>
         </div>
-
     </div>
-
 </section>
-
-
-<!-- EXPERIENCE SECTION -->
-<section class="section light-section" id="experience">
-
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
     <div class="container">
-
-        <div class="section-heading">
-            <span>PROFESSIONAL JOURNEY</span>
-            <h2>Practical Experience</h2>
-            <p>Project-based learning and hands-on technical development.</p>
+        <div class="section-heading reveal">
+            <span class="eyebrow">PRACTICAL DEVELOPMENT JOURNEY</span>
+            <h2>Experience &amp; Contributions</h2>
+            <p>
+                Practical experience gained through independent
+                development, project participation and technology
+                initiatives.
+            </p>
         </div>
-
-        <div class="experience-list">
-
-            <article class="experience-item">
-                <span class="experience-dot"></span>
-                <h3>Digital Systems Development</h3>
-                <p class="experience-type">Independent Project Work</p>
-                <p>
-                    Exploring system structures, digital workflows,
-                    practical solutions and application concepts.
-                </p>
+        <div class="experience-timeline">
+            <article class="experience-item reveal">
+                <div class="timeline-marker">01</div>
+                <div class="experience-card">
+                    <div class="experience-meta">
+                        <span>EXPERIENCE 01</span>
+                        <span>Ongoing</span>
+                    </div>
+                    <h3>Digital Systems Development</h3>
+                    <p>
+                        Practical involvement in developing digital
+                        platforms and exploring how software can
+                        support business and operational needs.
+                    </p>
+                    <h4>Contributions</h4>
+                    <ul>
+                        <li>Developing web interfaces using HTML, CSS and JavaScript.</li>
+                        <li>Building and improving functional website components.</li>
+                        <li>Exploring system structure, logic and user experience.</li>
+                        <li>Practising deployment and digital platform management.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Web Development</span>
+                        <span>System Building</span>
+                        <span>Practical Learning</span>
+                    </div>
+                </div>
             </article>
-
-            <article class="experience-item">
-                <span class="experience-dot"></span>
-                <h3>FarmBook Development</h3>
-                <p class="experience-type">Product Development Project</p>
-                <p>
-                    Developing an agricultural application prototype
-                    and exploring digital product functionality.
-                </p>
+            <article class="experience-item reveal">
+                <div class="timeline-marker">02</div>
+                <div class="experience-card">
+                    <div class="experience-meta">
+                        <span>EXPERIENCE 02</span>
+                        <span>Prototype Development</span>
+                    </div>
+                    <h3>FarmBook Development</h3>
+                    <p>
+                        Development of a farming application prototype
+                        to explore the use of digital technology in
+                        agricultural information and services.
+                    </p>
+                    <h4>Contributions</h4>
+                    <ul>
+                        <li>Developing the application prototype.</li>
+                        <li>Exploring application structure and navigation.</li>
+                        <li>Working on interface components and application logic.</li>
+                        <li>Improving the product through practical testing and iteration.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Application Development</span>
+                        <span>Product Prototyping</span>
+                        <span>Agritech</span>
+                    </div>
+                </div>
             </article>
-
-            <article class="experience-item">
-                <span class="experience-dot"></span>
-                <h3>Enterprise Systems Planning</h3>
-                <p class="experience-type">Agribusiness Technology Project</p>
-                <p>
-                    Exploring technology requirements, operational
-                    processes and integrated business systems.
-                </p>
+            <article class="experience-item reveal">
+                <div class="timeline-marker">03</div>
+                <div class="experience-card">
+                    <div class="experience-meta">
+                        <span>EXPERIENCE 03</span>
+                        <span>Project-Based</span>
+                    </div>
+                    <h3>Enterprise Systems Planning</h3>
+                    <p>
+                        Participation in planning and research for
+                        an integrated agribusiness technology initiative,
+                        with attention to information management and
+                        operational systems.
+                    </p>
+                    <h4>Contributions</h4>
+                    <ul>
+                        <li>Supporting market intelligence research.</li>
+                        <li>Contributing to supplier and processor information planning.</li>
+                        <li>Exploring digital workflows for business operations.</li>
+                        <li>Participating in early-stage technology planning.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Enterprise Technology</span>
+                        <span>Research</span>
+                        <span>System Planning</span>
+                    </div>
+                </div>
             </article>
-
-            <article class="experience-item">
-                <span class="experience-dot"></span>
-                <h3>Web Development & Digital Platforms</h3>
-                <p class="experience-type">Independent Development</p>
-                <p>
-                    Building websites, developing interfaces and
-                    learning deployment and troubleshooting.
-                </p>
+            <article class="experience-item reveal">
+                <div class="timeline-marker">04</div>
+                <div class="experience-card">
+                    <div class="experience-meta">
+                        <span>EXPERIENCE 04</span>
+                        <span>Ongoing</span>
+                    </div>
+                    <h3>Web Development &amp; Digital Platforms</h3>
+                    <p>
+                        Building personal and business-oriented
+                        digital platforms while strengthening
+                        practical front-end development skills.
+                    </p>
+                    <h4>Contributions</h4>
+                    <ul>
+                        <li>Creating responsive website structures.</li>
+                        <li>Developing interactive website components.</li>
+                        <li>Working on company and personal portfolio platforms.</li>
+                        <li>Exploring website hosting, deployment and maintenance.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Deployment</span>
+                    </div>
+                </div>
             </article>
-
         </div>
-
     </div>
-
 </section>
-
-
-<!-- SERVICES SECTION -->
-<section class="section" id="services">
-
+<!-- LEARNING -->
+<section class="section learning-section" id="learning">
     <div class="container">
-
-        <div class="section-heading">
-            <span>WHAT I WORK ON</span>
-            <h2>Services & Solutions</h2>
-            <p>Technology services and areas of development.</p>
+        <div class="section-heading reveal">
+            <span class="eyebrow">KNOWLEDGE &amp; PROFESSIONAL GROWTH</span>
+            <h2>Learning &amp; Certifications</h2>
+            <p>
+                A continuous learning journey focused on strengthening
+                technical understanding and practical development skills.
+            </p>
         </div>
-
         <div class="card-grid">
-
-            <article class="info-card">
-                <span class="card-number">01</span>
-                <h3>Website Development</h3>
-                <p>Responsive websites and digital business platforms.</p>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">02</span>
-                <h3>Application Development</h3>
-                <p>Application concepts, prototypes and digital products.</p>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">03</span>
-                <h3>Business Systems</h3>
-                <p>Digital workflows and technology-based business solutions.</p>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">04</span>
-                <h3>IT Support</h3>
-                <p>Technical assistance and basic technology troubleshooting.</p>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">05</span>
-                <h3>Digital Marketing</h3>
-                <p>Digital presence and online business promotion solutions.</p>
-            </article>
-
-            <article class="info-card">
-                <span class="card-number">06</span>
-                <h3>Cybersecurity</h3>
-                <p>Security awareness and developing knowledge of digital protection.</p>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- LEARNING SECTION -->
-<section class="section light-section" id="learning">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <span>CONTINUOUS DEVELOPMENT</span>
-            <h2>Learning & Growth</h2>
-            <p>Building knowledge through study, research and practical work.</p>
-        </div>
-
-        <div class="card-grid">
-
-            <article class="info-card">
+            <article class="learning-card reveal">
+                <span class="learning-index">01</span>
                 <h3>Web Development</h3>
-                <p>Continuously improving frontend development skills.</p>
+                <p>
+                    Improving knowledge of website structure, responsive
+                    design, styling and interactive functionality.
+                </p>
             </article>
-
-            <article class="info-card">
+            <article class="learning-card reveal">
+                <span class="learning-index">02</span>
                 <h3>Software Development</h3>
-                <p>Learning application architecture and programming.</p>
+                <p>
+                    Exploring application architecture, programming
+                    logic, development methods and practical prototyping.
+                </p>
             </article>
-
-            <article class="info-card">
+            <article class="learning-card reveal">
+                <span class="learning-index">03</span>
                 <h3>Cybersecurity</h3>
-                <p>Studying security fundamentals and digital protection.</p>
+                <p>
+                    Developing foundational knowledge of security
+                    principles, digital protection and responsible
+                    technology practices.
+                </p>
             </article>
-
-            <article class="info-card">
+            <article class="learning-card reveal">
+                <span class="learning-index">04</span>
                 <h3>Digital Infrastructure</h3>
-                <p>Exploring hosting, servers and deployment environments.</p>
+                <p>
+                    Learning about hosting, deployment, digital
+                    infrastructure and the systems that support
+                    online services.
+                </p>
             </article>
-
-            <article class="info-card">
-                <h3>Professional Certifications</h3>
-                <p>Dedicated space for verified professional certificates.</p>
-                <a href="#contact" class="text-link">Certification enquiries</a>
-            </article>
-
-            <article class="info-card">
+            <article class="learning-card reveal">
+                <span class="learning-index">05</span>
                 <h3>Practical Development</h3>
-                <p>Learning through building, testing and improving projects.</p>
+                <p>
+                    Applying new knowledge through independent projects,
+                    experimentation and continuous improvement.
+                </p>
             </article>
-
+            <article class="learning-card certificate-card reveal">
+                <span class="learning-index">06</span>
+                <h3>Professional Certifications</h3>
+                <p>
+                    A dedicated space for verified professional
+                    certificates and recognised training credentials.
+                </p>
+                <span class="certificate-note">Certificate Showcase — Updates as credentials are earned.</span>
+            </article>
         </div>
-
     </div>
-
 </section>
-
-
 <!-- CAREER VISION -->
-<section class="section vision" id="vision">
-
+<section class="section vision-section" id="vision">
     <div class="container">
-
-        <div class="section-heading">
-            <span>THE FUTURE</span>
-            <h2>Professional Vision</h2>
+        <div class="section-heading reveal">
+            <span class="eyebrow">DIRECTION &amp; PURPOSE</span>
+            <h2>Career Vision &amp; Objectives</h2>
+            <p>
+                Building a strong technical foundation while working
+                towards meaningful contributions in the technology industry.
+            </p>
         </div>
-
-        <div class="card-grid">
-
-            <article class="vision-card">
+        <div class="vision-grid">
+            <article class="vision-card reveal">
+                <span>01</span>
                 <h3>Technical Excellence</h3>
-                <p>Continuously improving technical knowledge and development skills.</p>
+                <p>
+                    Strengthen technical knowledge and practical
+                    development capabilities through consistent learning.
+                </p>
             </article>
-
-            <article class="vision-card">
+            <article class="vision-card reveal">
+                <span>02</span>
                 <h3>Software Innovation</h3>
-                <p>Creating useful digital products and practical technology solutions.</p>
+                <p>
+                    Develop useful software products and digital
+                    solutions that address practical needs.
+                </p>
             </article>
-
-            <article class="vision-card">
+            <article class="vision-card reveal">
+                <span>03</span>
                 <h3>Enterprise Technology</h3>
-                <p>Contributing to technology that improves business operations.</p>
+                <p>
+                    Contribute to reliable technology systems that
+                    support business operations and growth.
+                </p>
             </article>
-
-            <article class="vision-card">
+            <article class="vision-card reveal">
+                <span>04</span>
                 <h3>Professional Growth</h3>
-                <p>Building meaningful partnerships and pursuing new opportunities.</p>
+                <p>
+                    Build experience, develop professional relationships
+                    and pursue opportunities for continuous advancement.
+                </p>
             </article>
-
         </div>
-
-        <div class="vision-statement">
-            <p>
-                "To build technology that solves problems,
-                creates opportunities and makes a meaningful impact."
-            </p>
+        <div class="vision-statement reveal">
+            <span>MY LONG-TERM VISION</span>
+            <blockquote>
+                “To build technology that solves problems, creates
+                opportunities and makes a meaningful impact.”
+            </blockquote>
         </div>
-
     </div>
-
 </section>
-
-
-<!-- YAXO SYSTEMS -->
-<section class="section light-section" id="yaxo-systems">
-
+<!-- SERVICES -->
+<section class="section" id="services">
     <div class="container">
-
-        <div class="section-heading">
-            <span>ENTREPRENEURSHIP & TECHNOLOGY</span>
-            <h2>&lt;—— Yaxo-Systems ——&gt;</h2>
-            <p>Building Digital Solutions. Creating Opportunities.</p>
-        </div>
-
-        <div class="about-content">
-
+        <div class="section-heading reveal">
+            <span class="eyebrow">AREAS OF WORK</span>
+            <h2>Services &amp; Solutions</h2>
             <p>
-                Yaxo-Systems is a technology venture focused on
-                developing digital products, software solutions
-                and practical technology services.
+                Technology service areas focused on helping individuals
+                and organisations explore and adopt digital solutions.
             </p>
-
+        </div>
+        <div class="card-grid services-grid">
+            <article class="service-card reveal">
+                <span class="service-number">01</span>
+                <h3>Website Development</h3>
+                <p>
+                    Responsive websites and digital business platforms.
+                </p>
+            </article>
+            <article class="service-card reveal">
+                <span class="service-number">02</span>
+                <h3>Application Development</h3>
+                <p>
+                    Application concepts, prototypes and software solutions.
+                </p>
+            </article>
+            <article class="service-card reveal">
+                <span class="service-number">03</span>
+                <h3>Business Systems</h3>
+                <p>
+                    Digital workflows and practical business system solutions.
+                </p>
+            </article>
+            <article class="service-card reveal">
+                <span class="service-number">04</span>
+                <h3>IT Support</h3>
+                <p>
+                    General technology assistance and digital support services.
+                </p>
+            </article>
+            <article class="service-card reveal">
+                <span class="service-number">05</span>
+                <h3>Digital Marketing</h3>
+                <p>
+                    Digital promotion and online business visibility solutions.
+                </p>
+            </article>
+            <article class="service-card reveal">
+                <span class="service-number">06</span>
+                <h3>Cybersecurity</h3>
+                <p>
+                    Security awareness and developing digital security solutions.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- YAXO SYSTEMS -->
+<section class="section yaxo-section" id="yaxo-systems">
+    <div class="container">
+        <div class="yaxo-panel reveal">
+            <span class="eyebrow">COMPANY &amp; TECHNOLOGY VENTURE</span>
+            <h2>&lt;—— Yaxo-Systems ——&gt;</h2>
+            <h3>Building Practical Technology for Real-World Needs.</h3>
             <p>
-                My involvement includes technology development,
-                product planning, system design and building
-                digital solutions aimed at addressing real-world
+                Yaxo-Systems is a technology venture focused on digital
+                products, software solutions and practical technology
+                services. Its direction is centred on building useful
+                digital tools and systems that address real-world
                 business and operational challenges.
             </p>
-
             <p>
-                The long-term vision is to establish a sustainable
-                technology company through product development,
-                client services, strategic partnerships and
-                international growth opportunities.
+                My involvement includes technology development,
+                product planning, system design and building digital
+                solutions with a long-term vision for sustainable growth.
             </p>
-
-            <a href="#projects" class="btn btn-primary">
-                Explore Related Projects
+            <div class="yaxo-focus-grid">
+                <div>
+                    <span>01</span>
+                    <h4>Digital Products</h4>
+                    <p>Exploring and developing practical technology products.</p>
+                </div>
+                <div>
+                    <span>02</span>
+                    <h4>Software Solutions</h4>
+                    <p>Building digital systems for business and operational needs.</p>
+                </div>
+                <div>
+                    <span>03</span>
+                    <h4>Technology Services</h4>
+                    <p>Providing digital services and development support.</p>
+                </div>
+                <div>
+                    <span>04</span>
+                    <h4>Long-Term Growth</h4>
+                    <p>Working towards partnerships, investment and international opportunities.</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-light">
+                Discuss Opportunities
             </a>
-
         </div>
-
     </div>
-
 </section>
-
-
 <!-- CONTACT -->
-<section class="section contact" id="contact">
-
+<section class="section contact-section" id="contact">
     <div class="container">
-
-        <div class="section-heading">
-            <span>LET'S CONNECT</span>
+        <div class="section-heading reveal">
+            <span class="eyebrow">LET'S CONNECT</span>
             <h2>Have a Project in Mind?</h2>
             <p>
-                Let's discuss how technology can help bring
-                your ideas to life.
+                Let's discuss how technology can help bring your ideas
+                to life.
             </p>
         </div>
-
-        <div class="contact-box">
-
+        <div class="contact-panel reveal">
             <h3>Let's Build Something Meaningful.</h3>
-
             <p>
-                Whether you have a website project, a digital
-                solution, a technology opportunity or a potential
-                collaboration, I'd be glad to connect and explore
-                the possibilities.
+                I welcome professional opportunities, website projects,
+                digital solution development, technology discussions
+                and potential collaborations.
             </p>
-
-            <a href="mailto:yayamohammed292@gmail.com"
-               class="btn btn-primary">
-                Email Me
+            <a class="btn btn-primary"
+               href="mailto:yayamohammed292@gmail.com?subject=Professional%20Enquiry">
+                Send an Email
             </a>
-
-            <p class="contact-email">
+            <a class="email-link" href="mailto:yayamohammed292@gmail.com">
                 yayamohammed292@gmail.com
-            </p>
-
+            </a>
         </div>
-
     </div>
-
 </section>
-
 </main>
-
-
 <!-- FOOTER -->
 <footer class="footer">
-
-    <div class="container">
-
-        <a href="#home" class="logo footer-logo">
-            YAYA<span>.</span>
-        </a>
-
-        <p>
-            Technology • Development • Innovation
-        </p>
-
-        <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <p class="copyright">
-            © <span id="current-year"></span>
-            Yaya Mohammed. All Rights Reserved.
-        </p>
-
-    </div>
-
+    <div class="container footer-content">
+        <a href="#home" class="logo footer-logo">YAYA<span>.</span></a>
+    <p>
+        Technology Developer &amp; Digital Systems Builder.
+    </p>
+    <p class="copyright">
+        &copy; <span id="current-year"></span> Yaya Mohammed.
+        All rights reserved.
+    </p>
+</div>
 </footer>
-
-
-<script src="script.js"></script>
-
 </body>
 </html>
