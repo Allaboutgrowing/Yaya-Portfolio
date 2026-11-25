@@ -1547,3 +1547,76 @@ animation: none;
         min-height: auto;
     }
 }
+/* =========================================
+   24. PROFESSIONAL ABOUT SECTION
+========================================= */
+
+.about-label {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    line-height: 1.35;
+    max-width: 520px;
+}
+
+.about-text p {
+    line-height: 1.9;
+}
+
+.about-signature {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-top: 1px solid var(--border);
+    margin-top: 28px;
+    padding-top: 20px;
+}
+
+.about-signature span {
+    color: var(--navy);
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.about-signature small {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.highlight-card {
+    position: relative;
+    overflow: hidden;
+    padding: 27px;
+}
+
+.highlight-card::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: -25px;
+    bottom: -25px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    opacity: 0.7;
+}
+
+.highlight-number,
+.highlight-card h3,
+.highlight-card p {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+}
