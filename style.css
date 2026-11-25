@@ -2135,3 +2135,151 @@ animation: none;
         align-items: flex-start;
     }
 }
+/* =========================================
+   30. YAXO-SYSTEMS FEATURE REFINEMENT
+========================================= */
+
+.yaxo-panel {
+    position: relative;
+    overflow: hidden;
+    padding: 45px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #102b50, #08499f);
+    color: #ffffff;
+}
+
+.yaxo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.yaxo-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 14px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: .75rem;
+}
+
+.yaxo-panel h2 {
+    margin-top: 35px;
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    letter-spacing: -1px;
+}
+
+.yaxo-panel h3 {
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.yaxo-panel > h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.yaxo-description {
+    max-width: 850px;
+    color: #d9e8ff;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.yaxo-divider {
+    height: 1px;
+    background: rgba(255,255,255,.2);
+    margin: 35px 0;
+}
+
+.yaxo-focus-heading > span {
+    color: #b9d7ff;
+    font-size: .7rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.yaxo-focus-heading h3 {
+    margin: 10px 0 25px;
+    font-size: 1.4rem;
+}
+
+.yaxo-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.yaxo-focus-item {
+    padding: 22px;
+    border: 1px solid rgba(255,255,255,.17);
+    border-radius: 13px;
+    background: rgba(255,255,255,.06);
+    transition: .3s ease;
+}
+
+.yaxo-focus-item:hover {
+    background: rgba(255,255,255,.12);
+    transform: translateY(-5px);
+}
+
+.yaxo-focus-item > span {
+    color: #9bc6ff;
+    font-weight: 900;
+    font-size: .85rem;
+}
+
+.yaxo-focus-item h4 {
+    color: #ffffff;
+    margin: 12px 0 8px;
+}
+
+.yaxo-focus-item p {
+    color: #d9e8ff;
+    line-height: 1.7;
+    font-size: .88rem;
+    margin: 0;
+}
+
+.yaxo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.yaxo-footer-label {
+    color: #b9d7ff;
+    font-size: .68rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.yaxo-footer h4 {
+    color: #ffffff;
+    margin-top: 9px;
+}
+
+@media (max-width: 600px) {
+    .yaxo-panel {
+        padding: 27px 22px;
+    }
+
+    .yaxo-focus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .yaxo-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
