@@ -1290,3 +1290,117 @@ color: #b0b0b0;
 }
 
 }
+/* ===== CAREER VISION ===== */
+
+.vision {
+padding: 100px 8%;
+background: #0a0a0a;
+color: #ffffff;
+}
+
+.vision-container {
+max-width: 1200px;
+margin: auto;
+}
+
+.vision-heading {
+max-width: 750px;
+margin-bottom: 50px;
+}
+
+.vision-heading h2 {
+font-size: clamp(32px, 5vw, 55px);
+margin-bottom: 20px;
+}
+
+.vision-heading h2 span {
+color: #ffcc00;
+}
+
+.vision-heading > p:last-child {
+color: #bdbdbd;
+line-height: 1.8;
+}
+
+.vision-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+}
+
+.vision-card {
+background: #151515;
+border: 1px solid #292929;
+border-radius: 12px;
+padding: 30px;
+transition: 0.3s ease;
+}
+
+.vision-card:hover {
+border-color: #ffcc00;
+transform: translateY(-5px);
+}
+
+.vision-number {
+display: inline-block;
+color: #ffcc00;
+font-size: 14px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+.vision-card h3 {
+font-size: 22px;
+margin-bottom: 15px;
+}
+
+.vision-card p {
+color: #bdbdbd;
+font-size: 15px;
+line-height: 1.8;
+}
+
+.vision-statement {
+margin-top: 45px;
+padding: 45px;
+background: linear-gradient(
+135deg,
+#191919,
+#24200d
+);
+border: 1px solid #39301a;
+border-radius: 12px;
+text-align: center;
+}
+
+.vision-label {
+color: #ffcc00;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+
+.vision-statement h3 {
+max-width: 800px;
+margin: auto;
+font-size: clamp(22px, 3vw, 35px);
+line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+.vision {
+    padding: 75px 6%;
+}
+.vision-grid {
+    grid-template-columns: 1fr;
+}
+.vision-card {
+    padding: 25px;
+}
+.vision-statement {
+    padding: 30px 20px;
+}
+
+}
