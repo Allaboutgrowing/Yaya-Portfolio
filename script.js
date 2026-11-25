@@ -23,9 +23,11 @@ if (menuToggle && navbar) {
             isOpen ? "Close navigation menu" : "Open navigation menu"
         );
     });
+    // CLOSE MENU AFTER SELECTING A LINK
     navLinks.forEach(link => {
         link.addEventListener("click", closeMenu);
     });
+    // CLOSE MENU WHEN CLICKING OUTSIDE
     document.addEventListener("click", event => {
         const clickedInsideMenu = navbar.contains(event.target);
         const clickedToggle = menuToggle.contains(event.target);
@@ -33,6 +35,7 @@ if (menuToggle && navbar) {
             closeMenu();
         }
     });
+    // CLOSE MENU USING ESCAPE KEY
     document.addEventListener("keydown", event => {
         if (event.key === "Escape") {
             closeMenu();
