@@ -1096,7 +1096,187 @@ ul {
         animation-duration: 0.01ms !important;
     }
 
-}
+/* =========================================
+21. PREMIUM VISUAL REFINEMENTS
+========================================= */
+
 body {
-    background: #e8f2ff !important;
+background: var(–white);
+}
+
+::selection {
+background: var(–primary);
+color: var(–white);
+}
+
+.header {
+backdrop-filter: blur(14px);
+-webkit-backdrop-filter: blur(14px);
+}
+
+.logo {
+transition: var(–transition);
+}
+
+.logo:hover {
+letter-spacing: 2px;
+}
+
+.nav-link {
+position: relative;
+padding: 10px 0;
+}
+
+.nav-link::after {
+content: “”;
+position: absolute;
+left: 0;
+bottom: 2px;
+width: 0;
+height: 2px;
+background: var(–primary);
+transition: var(–transition);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+width: 100%;
+}
+
+.hero {
+position: relative;
+background:
+radial-gradient(circle at 85% 25%, rgba(18, 97, 201, 0.09), transparent 28%),
+linear-gradient(120deg, #ffffff, #f0f6ff 65%, #e5f0ff);
+}
+
+.hero-content {
+animation: heroEntry 0.8s ease both;
+}
+
+@keyframes heroEntry {
+from {
+opacity: 0;
+transform: translateY(22px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.section-heading h2 {
+letter-spacing: -1px;
+}
+
+.section-heading h2::after {
+content: “”;
+display: block;
+width: 55px;
+height: 4px;
+margin: 17px auto 0;
+background: var(–primary);
+border-radius: 10px;
+}
+
+.panel,
+.highlight-card,
+.skill-card,
+.project-card,
+.learning-card,
+.service-card,
+.vision-card,
+.experience-card {
+transition:
+transform 0.3s ease,
+box-shadow 0.3s ease,
+border-color 0.3s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.learning-card:hover,
+.service-card:hover,
+.vision-card:hover,
+.highlight-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 22px 45px rgba(16, 43, 80, 0.12);
+}
+
+.card-icon {
+font-size: 1.1rem;
+box-shadow: 0 5px 15px rgba(18, 97, 201, 0.08);
+}
+
+.project-card {
+position: relative;
+overflow: hidden;
+}
+
+.project-card::before {
+content: “”;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: linear-gradient(90deg, var(–primary), #73aef5);
+}
+
+.experience-card {
+border-left: 4px solid var(–primary);
+}
+
+.timeline-marker {
+box-shadow: 0 0 0 5px rgba(18, 97, 201, 0.08);
+}
+
+.btn {
+letter-spacing: 0.2px;
+}
+
+.contact-panel {
+background:
+radial-gradient(circle at 100% 0%, rgba(18, 97, 201, 0.08), transparent 35%),
+var(–light);
+}
+
+.email-link:hover {
+text-decoration: underline;
+}
+
+.footer {
+position: relative;
+}
+
+.footer::before {
+content: “”;
+display: block;
+width: 55px;
+height: 4px;
+margin: 0 auto 30px;
+background: #75adf3;
+border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+.nav-link::after {
+display: none;
+}
+
+.hero {
+    background:
+        radial-gradient(circle at 100% 10%, rgba(18, 97, 201, 0.10), transparent 35%),
+        linear-gradient(135deg, #ffffff, #edf5ff);
+}
+.section-heading h2::after {
+    margin-top: 13px;
+}
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+.hero-content {
+animation: none;
+}
 }
