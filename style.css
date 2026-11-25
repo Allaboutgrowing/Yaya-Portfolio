@@ -136,27 +136,28 @@ transition: var(–transition);
 .nav-link.active {
 color: var(–primary);
 }
-
 .menu-toggle {
-display: none;
-width: 42px;
-height: 42px;
-border: 1px solid var(–border);
-border-radius: 9px;
-background: var(–white);
-cursor: pointer;
-padding: 9px;
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--white);
+    cursor: pointer;
+    padding: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-toggle span {
-display: block;
-height: 2px;
-width: 100%;
-background: var(–navy);
-margin: 5px 0;
-transition: var(–transition);
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--navy);
+    margin: 3px 0;
+    transition: var(--transition);
 }
-
 /* =====================================
 BUTTONS
 ===================================== */
